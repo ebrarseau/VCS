@@ -20,11 +20,12 @@ def main():
         satıcı_cinsi = input("Satıcının cinsi (tv, bilgisayar, beyaz eşya, diğer): ")
         satis_tutari = float(input("Satış tutarı: "))
         satıcı_seviye = input("seviye: ")
+        tarih = input("tarih: ")
 
         #Mağazayı veya satıcıyı ekleme
         if magaza_adi not in magazalar:
             magazalar[magaza_adi] = Magaza(magaza_adi)
-        magazalar[magaza_adi].ekle_satis(satıcı_adi, satıcı_cinsi, satis_tutari, satıcı_seviye)
+        magazalar[magaza_adi].ekle_satis(satıcı_adi, satıcı_cinsi, satis_tutari, satıcı_seviye, tarih)
         #kullanıcıya programdan çıkmak isteyip istemediği sorulur
         devam = input("Devam etmek istiyor musunuz? (E/H): ")
         if devam.lower() == "h":
