@@ -24,9 +24,9 @@ def main():
         #Mağazayı veya satıcıyı ekleme
         if magaza_adi not in magazalar:
             magazalar[magaza_adi] = Magaza(magaza_adi)
-        magazalar[magaza_adi].ekle_satis(satıcı_adi, satıcı_cinsi, satis_tutari)
+        magazalar[magaza_adi].ekle_satis(satıcı_adi, satıcı_cinsi, satis_tutari,)
         #kullanıcıya programdan çıkmak isteyip istemediği sorulur
-        devam = input("Devam etmek istiyor musunuz? (E/H): ")
+        devam = input("Devam etmek istiyor musunuz? (E/H): .")
         if devam.lower() == "h":
             break
 
